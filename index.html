@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo Sát Phong Cách Giao Dịch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 flex justify-center items-center min-h-screen p-4">
+    <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md transition-transform hover:scale-105">
+        <h1 class="text-2xl font-semibold text-indigo-600 mb-6 text-center">Bạn Phù Hợp Với Phong Cách Giao Dịch Nào?</h1>
+
+        <form id="surveyForm" class="space-y-4">
+            <div class="mb-4">
+                <label for="q1" class="block text-gray-700 text-sm font-bold mb-2">Câu 1: Bạn có thể theo dõi thị trường trong giờ làm việc không?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q1" value="A">
+                        <span class="ml-2 text-gray-900">A. Có, tôi theo dõi thường xuyên</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q1" value="B">
+                        <span class="ml-2 text-gray-900">B. Chỉ có thể xem vào giờ nghỉ hoặc sau làm</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q1" value="C">
+                        <span class="ml-2 text-gray-900">C. Hầu như không có thời gian</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q2" class="block text-gray-700 text-sm font-bold mb-2">Câu 2: Khi cổ phiếu bạn mua giảm 5%, bạn sẽ làm gì?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q2" value="A">
+                        <span class="ml-2 text-gray-900">A. Bán ngay để tránh lỗ thêm</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q2" value="B">
+                        <span class="ml-2 text-gray-900">B. Cân nhắc giữ nếu vẫn ổn</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q2" value="C">
+                        <span class="ml-2 text-gray-900">C. Không sao, công ty tốt thì tôi giữ tiếp</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q3" class="block text-gray-700 text-sm font-bold mb-2">Câu 3: Bạn muốn giữ cổ phiếu bao lâu?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q3" value="A">
+                        <span class="ml-2 text-gray-900">A. Vài ngày đến một tuần</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q3" value="B">
+                        <span class="ml-2 text-gray-900">B. Vài tuần đến vài tháng</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q3" value="C">
+                        <span class="ml-2 text-gray-900">C. Từ 6 tháng đến vài năm</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q4" class="block text-gray-700 text-sm font-bold mb-2">Câu 4: Bạn thấy thoải mái khi cổ phiếu dao động mạnh mỗi ngày không?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q4" value="A">
+                        <span class="ml-2 text-gray-900">A. Có, tôi thích cảm giác “sóng”</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q4" value="B">
+                        <span class="ml-2 text-gray-900">B. Thỉnh thoảng chịu được</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q4" value="C">
+                        <span class="ml-2 text-gray-900">C. Không, tôi thích sự ổn định</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q5" class="block text-gray-700 text-sm font-bold mb-2">Câu 5: Bạn thích tìm hiểu điều gì khi chọn cổ phiếu?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q5" value="A">
+                        <span class="ml-2 text-gray-900">A. Biểu đồ, chỉ báo kỹ thuật</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q5" value="B">
+                        <span class="ml-2 text-gray-900">B. Tin tức, ngành nghề có sóng</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q5" value="C">
+                        <span class="ml-2 text-gray-900">C. Báo cáo tài chính, tăng trưởng doanh nghiệp</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q6" class="block text-gray-700 text-sm font-bold mb-2">Câu 6: Bạn mong muốn kiếm lợi nhuận như thế nào?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q6" value="A">
+                        <span class="ml-2 text-gray-900">A. Kiếm nhanh vài phần trăm mỗi tuần</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q6" value="B">
+                        <span class="ml-2 text-gray-900">B. Tăng đều vài chục phần trăm mỗi năm</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q6" value="C">
+                        <span class="ml-2 text-gray-900">C. Lợi nhuận cao nhưng kiên nhẫn dài hạn</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q7" class="block text-gray-700 text-sm font-bold mb-2">Câu 7: Khi thị trường giảm mạnh, bạn sẽ…</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q7" value="A">
+                        <span class="ml-2 text-gray-900">A. Bán ngay để bảo toàn vốn</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q7" value="B">
+                        <span class="ml-2 text-gray-900">B. Theo dõi, chờ phản ứng</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q7" value="C">
+                        <span class="ml-2 text-gray-900">C. Giữ tiếp nếu cổ phiếu cơ bản tốt</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="q8" class="block text-gray-700 text-sm font-bold mb-2">Câu 8: Bạn thích cách theo dõi cổ phiếu như thế nào?</label>
+                <div class="space-y-2">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q8" value="A">
+                        <span class="ml-2 text-gray-900">A. Xem bảng giá liên tục mỗi ngày</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q8" value="B">
+                        <span class="ml-2 text-gray-900">B. Theo dõi vài lần/tuần</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio h-5 w-5 text-blue-600 rounded" name="q8" value="C">
+                        <span class="ml-2 text-gray-900">C. Thỉnh thoảng xem, đầu tư rồi để đó</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition duration-300 ease-in-out w-full">
+                Xem Kết Quả
+            </button>
+        </form>
+
+        <div id="results" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 hidden">
+            <h2 class="text-xl font-semibold text-green-600 mb-4 text-center">Kết quả của bạn</h2>
+            <p id="resultText" class="text-gray-800 text-lg"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const answers = {};
+            const formData = new FormData(this);
+            formData.forEach((value, key) => {
+                answers[key] = value;
+            });
+
+            let aCount = 0;
+            let bCount = 0;
+            let cCount = 0;
+
+            for (const key in answers) {
+                if (answers[key] === 'A') aCount++;
+                else if (answers[key] === 'B') bCount++;
+                else if (answers[key] === 'C') cCount++;
+            }
+
+            let resultText = '';
+            if (aCount >= 5) {
+                resultText = 'Bạn phù hợp với phong cách giao dịch ngắn hạn (lướt sóng, T+). Cần hệ thống kỹ thuật, kỷ luật cao, phản ứng nhanh.';
+            } else if (bCount >= 5) {
+                resultText = 'Bạn phù hợp với giao dịch trung hạn (swing/position). Kết hợp phân tích kỹ thuật + ngành, thời gian theo dõi vừa phải.';
+            } else if (cCount >= 5) {
+                resultText = 'Bạn phù hợp với đầu tư dài hạn (cơ bản). Ưu tiên doanh nghiệp tốt, định giá hợp lý, ít giao dịch.';
+            } else if (aCount >= 3 && bCount >= 3) {
+                resultText = 'Bạn có thể phù hợp với cả giao dịch ngắn hạn và trung hạn. Cần kết hợp linh hoạt các phương pháp phân tích và quản lý rủi ro.';
+            } else if (bCount >= 3 && cCount >= 3) {
+                resultText = 'Bạn có thể phù hợp với cả giao dịch trung hạn và đầu tư dài hạn.  Cần cân bằng giữa việc theo dõi thị trường và đánh giá cơ bản doanh nghiệp.';
+            }else if (aCount >= 3 && cCount >= 3) {
+                resultText = 'Bạn có thể phù hợp với giao dịch ngắn hạn và đầu tư dài hạn, nhưng cần cẩn trọng.  Phong cách đầu tư của bạn có thể có sự mâu thuẫn giữa việc nắm giữ dài hạn và lướt sóng, hãy chắc chắn bạn có chiến lược rõ ràng.';
+            } else {
+                resultText = 'Chúng tôi rất tiếc, không thể xác định được phong cách giao dịch phù hợp với bạn. Vui lòng trả lời lại để có kết quả chính xác hơn.';
+            }
+
+            document.getElementById('resultText').textContent = resultText;
+            document.getElementById('results').classList.remove('hidden');
+            window.scrollTo({ top: document.getElementById('results').offsetTop, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
